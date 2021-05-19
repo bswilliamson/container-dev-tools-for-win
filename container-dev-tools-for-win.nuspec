@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\chocolateyinstall.ps1" target="tools" />
+    <file src="tools\*" target="tools" />
   </files>
 </package>
