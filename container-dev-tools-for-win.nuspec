@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>container-dev-tools-for-win</id>
+    <version>0.0.1</version>
+    <authors>Ben Williamson</authors>
+    <description>A collection of tools that provide a baseline Linux development environment for containers on Windows.</description>
+    <dependencies>
+      <dependency id="chocolatey" version="0.10.15" />
+      <dependency id="git" version="2.31.1" />
+      <dependency id="wsl2" version="2.0.0.20210122" />
+      <dependency id="wsl-ubuntu-2004" version="20.4.0.20200912" />
+      <dependency id="docker-desktop" version="3.3.3" />
+      <dependency id="vscode" version="1.56.2" />
+      <dependency id="visualstudiocode-disableautoupdate" version="1.0.0.20180620" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+  </files>
+</package>
