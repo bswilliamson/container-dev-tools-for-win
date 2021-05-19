@@ -1,4 +1,4 @@
-param($Debug, $Verbose)
+param($User, $Debug, $Verbose)
 $ErrorActionPreference = 'Stop'
 
 choco pack
@@ -10,6 +10,6 @@ if ($Debug -eq $true) {
 if ($Verbose -eq $true) {
    $installArgs += 'v'
 }
-choco install $installArgs container-dev-tools-for-win -s "'.;https://chocolatey.org/api/v2'" --Params "/User:User"
+choco install $installArgs container-dev-tools-for-win -s "'.;https://chocolatey.org/api/v2'" --Params "/User:$User"
 
 rm *.nupkg
