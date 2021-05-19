@@ -1,5 +1,4 @@
-param($Debug)
-param($Verbose)
+param($Debug, $Verbose)
 $ErrorActionPreference = 'Stop'
 
 choco pack
